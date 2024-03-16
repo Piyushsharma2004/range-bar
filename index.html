@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Preference Ranking</title>
+</head>
+<body>
+
+        
+<div class="ranking-container">
+    <h1>Rank your preferences</h1>
+        <p>Rank your preferences for cancer treatment options. Move the slider to the right if the preference is more important to you. Move the slider to the left if the preference is less important to you.</p>
+<hr>
+    <div class="ranking">
+        <label for="cure">Best chance of cure:</label><br>
+        <input type="range" id="cure" class="preference-toggle" value="1" min="1" max="5" step="1" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </datalist>
+    </div>
+
+    <div class="ranking">
+        <label for="survival">Longest survival:</label><br>
+        <input type="range" id="survival" class="preference-toggle" value="1" min="1" max="5" step="1" list="tickmarks">
+    </div>
+    <div class="ranking">
+        <label for="survival">Convenient schedule: </label><br>
+        <input type="range" id="survival" class="preference-toggle" value="1" min="1" max="5" step="1" list="tickmarks">
+    </div>
+    <div class="ranking">
+        <label for="survival">Least toxicity:</label><br>
+        <input type="range" id="survival" class="preference-toggle" value="1" min="1" max="5" step="1" list="tickmarks">
+    </div>
+    <div class="ranking">
+        <label for="survival">Least expenses:</label><br>
+        <input type="range" id="survival" class="preference-toggle" value="1" min="1" max="5" step="1" list="tickmarks">
+    </div>
+    <button class="btn-submit"> Submit Preferences</button>
+
+    <!-- Add similar HTML for other preferences -->
+
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
